@@ -83,7 +83,7 @@
                                     <rect key="frame" x="16" y="308" width="288" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvN-Ih-Mxx">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvN-Ih-Mxx">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -95,6 +95,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-mq-pG8">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Send Mail"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="199" width="200" height="30"/>
@@ -103,6 +104,16 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gW9-8g-LsK"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybp-TA-SNb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                    <rect key="frame" x="16" y="160" width="200" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +123,7 @@
                                 <exclude reference="aAu-se-lI4"/>
                                 <exclude reference="EvN-Ih-Mxx"/>
                                 <exclude reference="Ajd-mq-pG8"/>
+                                <exclude reference="ybp-TA-SNb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +133,7 @@
                                 <include reference="aAu-se-lI4"/>
                                 <include reference="EvN-Ih-Mxx"/>
                                 <include reference="Ajd-mq-pG8"/>
+                                <include reference="ybp-TA-SNb"/>
                             </mask>
                         </variation>
                     </view>
@@ -131,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="Oi3-Vw-jmR" id="drr-Zp-jLX"/>
                         <outlet property="mailButton" destination="Ajd-mq-pG8" id="X0X-df-WDE"/>
                         <outlet property="messageLabel" destination="EvN-Ih-Mxx" id="Hi1-fg-pMa"/>
+                        <outlet property="nameLabel" destination="ybp-TA-SNb" id="OXL-Nw-tif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
